@@ -1,0 +1,29 @@
+<!-- Bydraw presents -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>A carousel by pure javascript</title>
+    <link rel="stylesheet" href="carousel.css">
+</head>
+
+<body>
+    <div id="lbt"></div>
+    <script src="carousel.js"></script>
+    <script>
+        new BDCarousel({
+            id: 'lbt',
+            width: 500,
+            height: 200,
+            num: 3,
+            autoPlay: false,
+            interVal: 1000,
+            callback: function () {
+                console.log("carousel done")
+            }
+        })
+    </script>
+</body>
+
+</html>

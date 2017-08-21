@@ -1,0 +1,117 @@
+ #crs_btns {
+     text-align: center;
+     padding: 5px 0;
+ }
+
+ #crs_showbox {
+     position: relative;
+     width: 760px;
+     height: 240px;
+     overflow: hidden;
+ }
+
+ #crs_pics {
+     width: 8000px;
+     height: 100%;
+     position: absolute;
+     left: 0;
+     -webkit-transition: left 0.5s;
+     transition: left 0.5s;
+     z-index: 1;
+ }
+
+ .crs_pic {
+     font-size: 100px;
+     line-height: 350px;
+     text-align: center;
+     width: 760px;
+     height: 240px;
+     float: left;
+     z-index: -1;
+ }
+
+ #crs_pics>div:nth-child(1) {
+     background: #32A0C5;
+ }
+
+ #crs_pics>div:nth-child(2) {
+     background: greenyellow;
+ }
+
+ #crs_pics>div:nth-child(3) {
+     background: orange;
+ }
+
+ #crs_pics>div:nth-child(4) {
+     background: #32A0C5;
+ }
+
+ #crs_pics>div:nth-child(5) {
+     background: greenyellow;
+ }
+
+ #crs_prev {
+     display: none;
+     float: left;
+     position: absolute;
+     z-index: 2;
+ }
+
+ #crs_next {
+     display: none;
+     float: left;
+     position: absolute;
+     z-index: 2;
+     right: 0;
+ }
+
+ .crs_arrow {
+     text-decoration: none;
+     cursor: pointer;
+     font-size: 40px;
+     line-height: 36px;
+     text-align: center;
+     width: 30px;
+     height: 40px;
+     top: 50%;
+     margin-top: -15px;
+     background-color: RGBA(0, 0, 0, .1);
+     color: #fff;
+ }
+
+ .crs_arrow:hover {
+     background-color: RGBA(0, 0, 0, .4);
+ }
+
+ #crs_swapButtons {
+     height: 15px;
+     margin: 0 auto;
+     z-index: 3;
+     position: absolute;
+     left: 360px;
+     bottom: 10px;
+ }
+
+ #crs_showbox:hover #crs_prev,#crs_showbox:hover #crs_next {
+     display: block;
+ }
+
+ #crs_swapButtons div {
+     width: 10px;
+     height: 10px;
+     background-color: #fff;
+     float: left;
+     margin: 2px;
+     text-align: center;
+     font: bold 20px/30px "microsoft yahei";
+     cursor: pointer;
+     border-radius: 100%;
+ }
+
+ #crs_swapButtons div:hover {
+     background-color: RGBA(0, 0, 0, .1);
+ }
+
+ #crs_swapButtons .crs_on {
+     background-color: RGBA(0, 0, 0, .5);
+ }
